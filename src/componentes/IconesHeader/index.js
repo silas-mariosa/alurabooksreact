@@ -9,7 +9,7 @@ export default function IconesHeader() {
     <ul className={styles.icones}>
       {icones.map((icone) => (
         <li className={styles.icone}>
-          <img src={icone} />
+          <img src={icone} alt="Icones" />
         </li>
       ))}
     </ul>
