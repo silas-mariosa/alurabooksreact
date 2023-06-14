@@ -1,14 +1,17 @@
 import styles from "./OpcoesHeader.module.css";
+import { Link } from "react-router-dom"
 
-const textoOpcoes = ["CATEGORIAS", "MINHA ESTANTE", "FAVORITOS"];
+const textoOpcoes = ["CATEGORIAS", "FAVORITOS", "ESTANTE"];
 
 export default function OpcoesHeader() {
   return (
     <ul className={styles.opcoes}>
-      {textoOpcoes.map((opcao) => (
+      {textoOpcoes.map((texto) => (
+        <Link to={`/${texto.toLowerCase()}`}>
         <li className={styles.opcao}>
-          <p>{opcao}</p>
+          <p className={styles.opcaoTexto}>{texto}</p>
         </li>
+        </Link>
       ))}
     </ul>
   );

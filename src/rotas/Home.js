@@ -1,14 +1,12 @@
-import Header from "./componentes/Header";
 import "./App.css";
 import Pesquisa from "componentes/Pesquisa";
 import UltimosLancamentos from "componentes/UltimosLancamentos";
 import CardRecomenda from "componentes/CardRecomenda";
-import img from "./imagens/livro2.png"
+import img from "../imagens/livro2.png"
 
-function App() {
+function Home() {
   return (
-    <div className="App">
-      <Header />
+    <div className="App">      
       <Pesquisa />
       <UltimosLancamentos/>
       <CardRecomenda
@@ -21,4 +19,4 @@ function App() {
   );
 }
 
-export default App;
+export default Home;
